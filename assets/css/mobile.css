@@ -70,14 +70,14 @@ p {
 
 .header {
     background: var(--linearGradient);
-    padding: 3rem;
+    padding: 1.6rem;
 }
 
 .container__content-img {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin: 1.6rem 0;
+    margin: 1.6rem 0 2.4rem 0;
 }
 
 .header__img {
@@ -86,6 +86,7 @@ p {
 
 .header__parrafo {
     color: var(--soft-orange);
+    margin-bottom: 2rem;
 }
 
 
@@ -169,7 +170,7 @@ p {
 
 .change__img {
     position: relative;
-    bottom: -2.75rem;
+    bottom: -3.5rem;
 }
 
 
@@ -233,37 +234,65 @@ p {
 }
 
 .container__title-2 {
-    margin: 2rem 1rem 1rem 1rem;
+    margin: 6.4rem 1rem 1rem 1rem;
 }
 
 .container__paquetes {
     display: flex;
     overflow-x: auto;
-    margin: 2.5rem 0;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: proximity;
+    margin: 2.5rem 1rem;
+}
+
+.container__paquetes::-webkit-scrollbar-thumb:hover {
+    background-color: var(--bitcoin-orange);
 }
 
 .container__paquete {
-    height: 24.7rem;
-    width: 19rem;
-    min-width: 19rem;
+    scroll-snap-align: center;
+    height: 27.5rem;
+    width: 22rem;
+    min-width: 22rem;
     background-color: var(--white);
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
-    margin: 1rem;
+    margin: 1.2rem;
+}
+
+.contenedor__star {
+    display: flex;
+    justify-content: center;
 }
 
 .paquete__star {
     color: var(--white);
     background-color: var(--bitcoin-orange);
-    padding: 0.8rem;
+    padding: 0.8rem 1.2rem;
     border-radius: 0.8rem;
     font-family: "Inter";
+    font-size: 1.2rem;
     position: relative;
     top: -1rem;
+}
+
+.none {
+    visibility: hidden;
+}
+
+.paquete__title {
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.content__price {
+    display: flex;
+    justify-content: center;
 }
 
 .paquete__dollar {
     font-size: 1.2rem;
     font-family: "Inter";
+    padding-top: 1.6rem;
 }
 
 .paquete__price {
@@ -279,11 +308,17 @@ p {
     font-weight: 500;
 }
 
+.paquete__enlace_contenedor {
+    display: flex;
+    justify-content: center;
+}
+
 .paquete__enlace {
     text-decoration: none;
     border: 0.2rem var(--bitcoin-orange) solid;
     background-color: var(--off-white);
-    padding: 1.6rem 1.5rem;
+    margin-top: 0.8rem;
+    padding: 1.25rem 1.5rem;
     border-radius: 0.4rem;
 }
 
