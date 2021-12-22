@@ -222,6 +222,7 @@ p {
     background: url("../images/bitcoinbaby.jpg") no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     height: 45rem;
 }
 
@@ -255,11 +256,7 @@ p {
     overflow-x: auto;
     overscroll-behavior-x: contain;
     scroll-snap-type: proximity;
-    margin: 2.5rem 1rem;
-}
-
-.container__paquetes::-webkit-scrollbar-thumb:hover {
-    background-color: var(--bitcoin-orange);
+    margin: 4.5rem 1rem 5rem 1rem;
 }
 
 .container__paquete {
