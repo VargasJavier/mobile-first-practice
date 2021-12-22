@@ -1,0 +1,23 @@
+.header {
+    padding: 5rem;
+}
+
+.container__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 5rem;
+}
+
+@media (min-width: 1280px) {
+    .container__content-change {
+        display: grid;
+        grid-template-columns: 35% 65%;
+    }
+    .container__content-logo {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .container__logo {
+        width: 50%;
+    }
+}

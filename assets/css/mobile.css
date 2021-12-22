@@ -122,6 +122,14 @@ p {
     padding: 0 1.7rem;
 }
 
+.container__card-change {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 45rem;
+    margin: 0 auto;
+}
+
 .card {
     display: flex;
     flex-direction: column;
@@ -190,6 +198,10 @@ p {
     color: var(--grey);
 }
 
+.container__cards {
+    padding: 1.5rem 0 4rem 0;
+}
+
 .container__card {
     margin: 1.6rem;
     padding: 1.6rem;
@@ -209,6 +221,7 @@ p {
 .container__image-info {
     background: url("../images/bitcoinbaby.jpg") no-repeat;
     background-size: cover;
+    background-position: center;
     height: 45rem;
 }
 
@@ -335,7 +348,7 @@ p {
     background-color: var(--bitcoin-orange);
     display: flex;
     padding: 2rem 2rem 2rem 0;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     color: var(--white);
 }
