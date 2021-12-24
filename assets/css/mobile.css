@@ -219,11 +219,12 @@ p {
 /* CONTAINER IMAGE */
 
 .container__image-info {
-    background: url("../images/bitcoinbaby.jpg") no-repeat;
+    background: url("../images/bitcoinbabyWeb.jpg") no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     height: 45rem;
+    width: 46.3rem;
 }
 
 .container__title-2--image {
